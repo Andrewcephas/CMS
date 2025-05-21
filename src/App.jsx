@@ -4,23 +4,88 @@ import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/Admin/Dashboard";
+import AdminCompanies from "./pages/Admin/AdminCompanies";
+import AdminApprovals from "./pages/Admin/AdminApprovals";
+import AdminSubscriptions from "./pages/Admin/AdminSubscriptions";
 import CompanyDashboard from "./pages/Company/Dashboard";
 import ClientDashboard from "./pages/Client/Dashboard";
-import { AuthProvider } from "./context/AuthContext"; // ✅ Add this
+import { AuthProvider } from "./context/AuthContext";
 
 function App() {
   return (
     <AuthProvider>
       <Router>
-        <MainLayout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/company" element={<CompanyDashboard />} />
-            <Route path="/client" element={<ClientDashboard />} />
-          </Routes>
-        </MainLayout>
+        <Routes>
+          {/* Public pages */}
+          <Route
+            path="/"
+            element={
+              <MainLayout>
+                <Home />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <MainLayout>
+                <Login />
+              </MainLayout>
+            }
+          />
+
+          {/* Admin pages */}
+          <Route
+            path="/admin"
+            element={
+              <MainLayout>
+                <AdminDashboard />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/admin/companies"
+            element={
+              <MainLayout>
+                <AdminCompanies />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/admin/approvals"
+            element={
+              <MainLayout>
+                <AdminApprovals />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/admin/subscriptions"
+            element={
+              <MainLayout>
+                <AdminSubscriptions />
+              </MainLayout>
+            }
+          />
+
+          {/* Company and Client */}
+          <Route
+            path="/company"
+            element={
+              <MainLayout>
+                <CompanyDashboard />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="/client"
+            element={
+              <MainLayout>
+                <ClientDashboard />
+              </MainLayout>
+            }
+          />
+        </Routes>
       </Router>
     </AuthProvider>
   );
