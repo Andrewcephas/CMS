@@ -1,5 +1,9 @@
 # 🚀 Client Project Management System
 
+# 🚀 EMAXY IT SERV LIMITED PROJECT
+
+# 🚀 PROGRAMMERS - **CATECH** , **MANU** , **SHADY**
+
 A role-based React frontend application for managing client projects, company operations, and administrative oversight.
 
 ## 🛠️ Tech Stack
@@ -66,3 +70,5 @@ Each role is redirected to its respective dashboard after login.
 
 1. Clone the repository:
    ```bash
+   git clone https://github.com/Andrewcephas/CMS.git
+   cd CMS
