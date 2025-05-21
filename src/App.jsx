@@ -10,6 +10,7 @@ import AdminSubscriptions from "./pages/Admin/AdminSubscriptions";
 import CompanyDashboard from "./pages/Company/Dashboard";
 import ClientDashboard from "./pages/Client/Dashboard";
 import { AuthProvider } from "./context/AuthContext";
+import Settings from "./pages/Settings";
 
 function App() {
   return (
@@ -74,6 +75,14 @@ function App() {
             element={
               <MainLayout>
                 <CompanyDashboard />
+              </MainLayout>
+            }
+          />   {/* setting */}
+          <Route
+            path="/settings"
+            element={
+              <MainLayout>
+                <Settings />
               </MainLayout>
             }
           />
