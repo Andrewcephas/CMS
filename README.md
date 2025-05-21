@@ -1,12 +1,12 @@
-# React + Vite
+#this is a react fronted (npm run dev)
+-- client project management syatem 
+log in
+-- sign up 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- choose assignment , client , company, admin
 
-Currently, two official plugins are available:
+- client - you can view the projects in progress , raise issues and they be handled by the company and you get feedback
+- company add a client initialize the project in the system
+- admin manage companies , add subscription etc
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- each section has CRUD Operations and Notification
